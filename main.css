@@ -1,0 +1,12 @@
+.move {    
+    -webkit-animation: bounce .8s infinite ease-in-out;
+    -moz-animation: bounce .8s infinite linear;
+    -o-animation: bounce .8s infinite linear;
+    animation: bounce .8s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+    0%   { left: 0px; }
+    50%   { left: 100px; }
+    100% { left: 0px; }
+}

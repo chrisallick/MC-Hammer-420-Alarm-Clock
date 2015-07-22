@@ -1,0 +1,20 @@
+{
+    "name": "420 Alarm Clock", // The title of your Chrome Extension.
+    "description": "Bruh. Take a moment. Whether you want to or not.", // The description of your Chrome Extension.
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://github.com/*"], // The websites to run on.
+        "js": ["jq.2.min.js", "main.js"],
+        "css": ["main.css"]
+    }], "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ], "browser_action": {
+        "default_icon": "icon128.png"
+    }, "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }, "web_accessible_resources": ["hammer.gif", "stop.m4a"] // Image(s)/Sound(s) you want to use.
+}
