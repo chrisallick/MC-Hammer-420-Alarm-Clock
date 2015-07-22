@@ -1,10 +1,10 @@
 {
-    "name": "420 Alarm Clock", // The title of your Chrome Extension.
-    "description": "Bruh. Take a moment. Whether you want to or not.", // The description of your Chrome Extension.
-    "version": "0.0.1",
+    "name": "MC Hammer 4:20 Alarm Clock",
+    "description": "Bruh. Take a moment. Whether you want to or not.",
+    "version": "1.0.1",
     "manifest_version": 2,
     "content_scripts": [{
-        "matches": ["https://github.com/*"], // The websites to run on.
+        "matches": ["https://github.com/*"],
         "js": ["jq.2.min.js", "main.js"],
         "css": ["main.css"]
     }], "permissions": [
@@ -16,5 +16,5 @@
         "48": "icon48.png",
         "64": "icon64.png",
         "128": "icon128.png"
-    }, "web_accessible_resources": ["hammer.gif", "stop.m4a"] // Image(s)/Sound(s) you want to use.
+    }, "web_accessible_resources": ["hammer.gif", "stop.m4a"]
 }
